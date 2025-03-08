@@ -1,0 +1,33 @@
+@model Ogrenci
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Ogrenci /Create page</p>
+    <form asp-controller="Ogrenci" asp-action="=Create" method="post">
+        <div class="md-3">
+            <label asp-for="OgrenciAdi" class="form-label">Öğrenci Adı</label>
+            <input asp-for="OgrenciAdi" class="form-control">
+        </div>
+        <div class="md-3">
+            <label asp-for="OgrenciSoyadi" class="form-label">Öğrenci Soyadı</label>
+            <input asp-for="OgrenciSoyadi" class="form-control">
+        </div>
+        <div class="md-3">
+            <label asp-for="Eposta" class="form-label">Eposta</label>
+            <input asp-for="Eposta" class="form-control">
+        </div>
+        <div class="md-3">
+            <label asp-for="Telefon" class="form-label">Telefon Numarası</label>
+            <input asp-for="Telefon" class="form-control">
+        </div>
+        </br>
+        <button type="submit" class="btn btn-secondary">Kaydet</button>
+    </form>
+</body>
+</html>    
